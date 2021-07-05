@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar-navigation {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 9rem;
+    height: 100vh;
+    box-shadow: 4px -2px 32px -2px rgba(0,0,0,0.47);
+}
+.company-logo {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: white;
+}
+.sidebar-all-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 20rem;
+    width: 100%;
+    text-transform: capitalize;
+    color: #757575;
+}
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.sidebar-list.selected {
+   background-color: #D0E0ED;
+   position: relative;
+   color: black;
+    
+}
+.sidebar-list.selected::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #3B6EBE;
+}
+
+.sidebar-list > a{
+    font-weight: bold;
+}
+
+/* page */
+.primary-navigation {
+    padding: 3.5rem;
+    background-color: white;
+}
+.section {
+    padding: 3rem;
+    margin: 0 0 0 9rem;
+}
+.secondary-navigation a{
+    font-size: 1rem;
+    color: #939DAB;
+    font-weight: bold;
+}
+.center-align {
+    width: 50rem;
+    margin: auto;
+    font-weight: bold;
+}
+.url-input {
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: 50rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.url-input::placeholder {
+    font-weight: bold;
+}
+.center-align > p {
+    text-align: center;
+}
+.btn.upload {
+    display: inline-block;
+    padding: 3rem;
+    background-color: white;
+}
+.upload-hidden {
+    display: none;
+    
+}
